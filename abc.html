@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library Management</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">📚 DigiLibrary</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#books">Book Catalog</a></li>
+                <li><a href="#rules">Library Rules</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="subtitle">YOUR KNOWLEDGE HUB</p>
+            <h2>Discover Your Next<br><span>Great Read</span></h2>
+            <p>
+                Explore books, discover new authors, and expand
+                your knowledge through our digital library.
+            </p>
+            <a href="#books" class="btn">Explore Books</a>
+        </div>
+    </section>
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Find Your Book</h2>
+        <div class="search-bar">
+            <input type="search" placeholder="Search by book title or author...">
+            <button type="button">Search</button>
+        </div>
+        <div class="filters">
+            <select aria-label="Filter by category">
+                <option value="">All Categories</option>
+                <option>Programming</option>
+                <option>Science</option>
+                <option>Literature</option>
+                <option>Artificial Intelligence</option>
+                <option>Mathematics</option>
+            </select>
+            <select aria-label="Filter by availability">
+                <option value="">All Availability</option>
+                <option>Available</option>
+                <option>Issued</option>
+            </select>
+            <select aria-label="Sort books">
+                <option>Sort by Title</option>
+                <option>Sort by Author</option>
+                <option>Sort by Category</option>
+            </select>
+        </div>
+    </section>
+    <!-- Categories -->
+    <section id="categories" class="section">
+        <h2 class="section-title">Book Categories</h2>
+        <div class="category-grid">
+            <a href="#books" class="category-card">
+                <span>💻</span>
+                <h3>Programming</h3>
+                <p>Coding and software development</p>
+            </a>
+            <a href="#books" class="category-card">
+                <span>🤖</span>
+                <h3>Artificial Intelligence</h3>
+                <p>AI and machine learning</p>
+            </a>
+            <a href="#books" class="category-card">
+                <span>🔬</span>
+                <h3>Science</h3>
+                <p>Discover scientific ideas</p>
+            </a>
+            <a href="#books" class="category-card">
+                <span>📐</span>
+                <h3>Mathematics</h3>
+                <p>Numbers and problem-solving</p>
+            </a>
+            <a href="#books" class="category-card">
+                <span>📖</span>
+                <h3>Literature</h3>
+                <p>Stories, novels, and poetry</p>
+            </a>
+            <a href="#books" class="category-card">
+                <span>🌍</span>
+                <h3>General Knowledge</h3>
+                <p>Explore the world around you</p>
+            </a>
+        </div>
+    </section>
+    <!-- Featured Books -->
+    <section class="section featured-section">
+        <h2 class="section-title">Featured Books</h2>
+        <div class="book-grid">
+            <article class="book-card">
+                <img
+                    src="https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg"
+                    alt="The C Programming Language book cover">
+                <div class="book-info">
+                    <span class="availability available">Available</span>
+                    <h3>The C Programming Language</h3>
+                    <p>Author: Brian W. Kernighan and Dennis M. Ritchie</p>
+                    <p>Category: Programming</p>
+                    <p class="book-id">Book ID: B101</p>
+                </div>
+            </article>
+            <article class="book-card">
+                <img
+                    src="https://covers.openlibrary.org/b/isbn/9780134685991-L.jpg"
+                    alt="Effective Java book cover">
+                <div class="book-info">
+                    <span class="availability issued">Issued</span>
+                    <h3>Effective Java</h3>
+                    <p>Author: Joshua Bloch</p>
+                    <p>Category: Programming</p>
+                    <p class="book-id">Book ID: B102</p>
+                </div>
+            </article>
+            <article class="book-card">
+                <img
+                    src="https://covers.openlibrary.org/b/isbn/9780134610993-L.jpg"
+                    alt="Artificial Intelligence: A Modern Approach book cover">
+                <div class="book-info">
+                    <span class="availability available">Available</span>
+                    <h3>Artificial Intelligence: A Modern Approach</h3>
+                    <p>Author: Stuart Russell and Peter Norvig</p>
+                    <p>Category: Artificial Intelligence</p>
+                    <p class="book-id">Book ID: B103</p>
+                </div>
+            </article>
+            <article class="book-card">
+                <img
+                    src="https://covers.openlibrary.org/b/isbn/9780135957059-L.jpg"
+                    alt="The Pragmatic Programmer book cover">
+                <div class="book-info">
+                    <span class="availability available">Available</span>
+                    <h3>The Pragmatic Programmer</h3>
+                    <p>Author: David Thomas and Andrew Hunt</p>
+                    <p>Category: Programming</p>
+                    <p class="book-id">Book ID: B104</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Complete Book Catalog -->
+    <section id="books" class="section">
+        <h2 class="section-title">Book Catalog</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B101</td>
+                        <td>The C Programming Language</td>
+                        <td>Brian W. Kernighan and Dennis M. Ritchie</td>
+                        <td>Programming</td>
+                        <td><span class="availability available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>B102</td>
+                        <td>Effective Java</td>
+                        <td>Joshua Bloch</td>
+                        <td>Programming</td>
+                        <td><span class="availability issued">Issued</span></td>
+                    </tr>
+                    <tr>
+                        <td>B103</td>
+                        <td>Artificial Intelligence: A Modern Approach</td>
+                        <td>Stuart Russell and Peter Norvig</td>
+                        <td>Artificial Intelligence</td>
+                        <td><span class="availability available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>B104</td>
+                        <td>The Pragmatic Programmer</td>
+                        <td>David Thomas and Andrew Hunt</td>
+                        <td>Programming</td>
+                        <td><span class="availability available">Available</span></td>
+                    </tr>
+                    <tr>
+                        <td>B105</td>
+                        <td>A Brief History of Time</td>
+                        <td>Stephen Hawking</td>
+                        <td>Science</td>
+                        <td><span class="availability issued">Issued</span></td>
+                    </tr>
+                    <tr>
+                        <td>B106</td>
+                        <td>Introduction to Algorithms</td>
+                        <td>Thomas H. Cormen and others</td>
+                        <td>Computer Science</td>
+                        <td><span class="availability available">Available</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Library Rules -->
+    <section id="rules" class="section rules-section">
+        <h2 class="section-title">Library Rules</h2>
+        <div class="rules-grid">
+            <div class="rule-card">
+                <span>📅</span>
+                <h3>Borrowing Period</h3>
+                <p>Return borrowed books within the library's specified loan period.</p>
+            </div>
+            <div class="rule-card">
+                <span>🤫</span>
+                <h3>Maintain Silence</h3>
+                <p>Keep the library quiet and respect other readers.</p>
+            </div>
+            <div class="rule-card">
+                <span>📕</span>
+                <h3>Protect Books</h3>
+                <p>Handle books carefully and avoid damaging library materials.</p>
+            </div>
+            <div class="rule-card">
+                <span>⏰</span>
+                <h3>Return on Time</h3>
+                <p>Return books by the due date and follow applicable late-return rules.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Contact the Library</h2>
+        <p>Email: library@example.com</p>
+        <p>Opening Hours: Monday - Saturday, 9:00 AM - 5:00 PM</p>
+        <p>Visit us for assistance with books and library services.</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DigiLibrary | Digital Library Management Interface</p>
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+</body>
+</html>
